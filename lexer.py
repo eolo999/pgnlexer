@@ -54,7 +54,7 @@ board_rank = r'[1-8]'
 board_file = r'[a-h]'
 piece = r'[NBRQK]'
 
-promotion = r'x?{board_file}[18]=(?!K){piece}{check}?'.format(
+promotion = r'x?{board_file}[18]=(?!K){piece}'.format(
     board_file=board_file,
     piece=piece,
     check=check)
