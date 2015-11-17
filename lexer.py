@@ -103,14 +103,14 @@ def t_error(t):
 
 def tokenize(data):
     """Tokenizes a PGN text passed as string.
-    
+
     Example::
 
         with open('filename.pgn') as pgn_file:
             pgn_text = pgn_file.read()
-        
+
         tokens = tokenize(pgn_text)
-    
+
     .."""
     lexer = lex.lex()
     lexer.input(data)
