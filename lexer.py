@@ -84,7 +84,7 @@ t_REST_OF_LINE_COMMENT = r';.*'
 t_MOVENO = r'\d+\.(\.\.)?'
 # NAGs (Numeric Annotation Glyphs) should be a numeric code in the range 0-255
 # prefixed by a '$' but a comination of '!' and '$' is often found.
-t_NAG = r'\$\d|\$[1-9]\d|\$1\d\d|\$2([0-4]\d|5[0-5])|[!\?]{1,2}'
+t_NAG = r'\$1[0-9][0-9]|\$2[0-4][0-9]|\$25[0-5]|\$[1-9][0-9]|\$[1-9]|[!\?]{1,2}'
 t_SAG = r'(?:{promotion}|{pawnmove}|{standardmove}|{castling}){check}?'.format(
     promotion=promotion,
     pawnmove=pawnmove,
